@@ -13,6 +13,8 @@ Desenvolvimento:
 
 Estrutura de diretórios é baseada neste formato
 
+CLICAR EM VISUALIZAR RAW PARA VER MELHOR ARVORE DE ARQUIVOS
+
 res://app
 ├── assets/                # Todos os recursos brutos (imagens, sons, fontes, etc.)
 │   ├── audio/
