@@ -5,7 +5,7 @@ Ferramentas:
 Godot engine v4.41
 IDE nativa Godot
 
-Assets:
+Assets:\n
 https://opengameart.org/
 https://www.kenney.nl/assets
 https://www.piskelapp.com/p/create/sprite/
