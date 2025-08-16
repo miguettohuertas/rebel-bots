@@ -41,6 +41,7 @@
 	│   ├── levels/            # Fases/mapas do jogo
 	│   ├── player/            # Cena do jogador
 	│   ├── enemies/           # Inimigos
+	│   ├── npcs/              # Qualquer personagem não jogável que não seja inimigo
 	│   └── ui/                # Interface (HUD, menus, etc.)
 	│
 	├── scripts/               # Scripts GDScript ou C#
