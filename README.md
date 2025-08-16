@@ -1,5 +1,16 @@
 # rebel-bots
-Pojeto de desenvolvimeto de jogo educacional com o intuito de contruibuir com a comunidade reginal de Joinville/SC
+Pojeto de desenvolvimeto de jogo educacional em 2D com o intuito de contruibuir com a comunidade reginal de Joinville/SC
+
+Ferramentas:
+Godot engine v4.41
+IDE nativa Godot
+
+Assets:
+https://opengameart.org/
+https://www.kenney.nl/assets
+https://www.piskelapp.com/p/create/sprite/
+https://inkscape.org/gallery/item/56342/inkscape-1.4.2_2025-05-13_f4327f4-x64.7z
+https://download.kde.org/stable/krita/5.2.11/krita-x64-5.2.11.zip
 
 Desenvolvimento: 
   Todo desenvolvimento vai para branch master.
@@ -8,12 +19,16 @@ Desenvolvimento:
   
   Todo o código do projeto será feito em português
   
-#Lembretes!!!
+#LEMBRETES!!!
   Não esqueça de fazer fetch+merge na sua branch periodicamente 
+  Atualizar seu projeto antes de criar pull request
 
 Estrutura de diretórios é baseada neste formato
 
 CLICAR EM VISUALIZAR RAW PARA VER MELHOR ARVORE DE ARQUIVOS
+
+IDEALMENTE:
+    salvar projeto em C://users/seu usuario/workspace (criar arquivo workspace)    
 
 res://app
 ├── assets/                # Todos os recursos brutos (imagens, sons, fontes, etc.)
