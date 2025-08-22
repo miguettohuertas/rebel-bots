@@ -11,6 +11,8 @@
 	https://www.piskelapp.com/p/create/sprite/
 	https://inkscape.org/gallery/item/56342/inkscape-1.4.2_2025-05-13_f4327f4-x64.7z
 	https://download.kde.org/stable/krita/5.2.11/krita-x64-5.2.11.zip
+ 	https://itch.io/
+  	https://pixabay.com/pt/sound-effects/
 
 # Desenvolvimento: 
 	-Todo desenvolvimento vai para branch master.
