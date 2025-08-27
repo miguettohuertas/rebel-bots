@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://q0bjy7v5ihri"]
+[gd_scene load_steps=3 format=3 uid="uid://q0bjy7v5ihri"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://cgqnolugfnrtn" path="res://app/scenes/levels/nivel01.tscn" id="1_nx8ty"]
+[ext_resource type="PackedScene" uid="uid://db0c0p72418tq" path="res://app/scenes/player/jogador.tscn" id="2_qj4o5"]
+
+[node name="Jogo" type="Node2D"]
+
+[node name="Level01" parent="." instance=ExtResource("1_nx8ty")]
+
+[node name="Jogador" parent="." instance=ExtResource("2_qj4o5")]
+position = Vector2(640, 500)
