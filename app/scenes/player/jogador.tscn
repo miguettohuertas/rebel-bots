@@ -1,19 +1,56 @@
-[gd_scene load_steps=4 format=3 uid="uid://db0c0p72418tq"]
+[gd_scene load_steps=5 format=3 uid="uid://db0c0p72418tq"]
 
 [ext_resource type="Script" uid="uid://vob3n4s6uaxl" path="res://app/scenes/player/jogador.gd" id="1_w40sf"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_b780r"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_rmueo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rmueo"]
-size = Vector2(720, 360)
+size = Vector2(180, 180)
 
 [node name="Jogador" type="Area2D"]
 script = ExtResource("1_w40sf")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.52588e-05, -1.43051e-05)
-scale = Vector2(720, 360)
+[node name="Braco" type="Sprite2D" parent="."]
+self_modulate = Color(0.745331, 0.577604, 0.533012, 1)
+scale = Vector2(1280, 350)
+texture = SubResource("CanvasTexture_b780r")
+
+[node name="Visor" type="Sprite2D" parent="."]
+self_modulate = Color(1.05888e-06, 0.746687, 0.591456, 1)
+position = Vector2(4.00006, 4.00003)
+scale = Vector2(744, 376)
 texture = SubResource("CanvasTexture_rmueo")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Encaixe1" type="CollisionShape2D" parent="."]
+position = Vector2(-272, -88)
+shape = SubResource("RectangleShape2D_rmueo")
+
+[node name="Encaixe2" type="CollisionShape2D" parent="."]
+position = Vector2(-88, -88)
+shape = SubResource("RectangleShape2D_rmueo")
+
+[node name="Encaixe3" type="CollisionShape2D" parent="."]
+position = Vector2(96, -88)
+shape = SubResource("RectangleShape2D_rmueo")
+
+[node name="Encaixe4" type="CollisionShape2D" parent="."]
+position = Vector2(280, -88)
+shape = SubResource("RectangleShape2D_rmueo")
+
+[node name="Encaixe5" type="CollisionShape2D" parent="."]
+position = Vector2(-272, 96)
+shape = SubResource("RectangleShape2D_rmueo")
+
+[node name="Encaixe6" type="CollisionShape2D" parent="."]
+position = Vector2(-88, 96)
+shape = SubResource("RectangleShape2D_rmueo")
+
+[node name="Encaixe7" type="CollisionShape2D" parent="."]
+position = Vector2(96, 96)
+shape = SubResource("RectangleShape2D_rmueo")
+
+[node name="Encaixe8" type="CollisionShape2D" parent="."]
+position = Vector2(280, 96)
 shape = SubResource("RectangleShape2D_rmueo")

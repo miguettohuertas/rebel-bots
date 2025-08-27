@@ -1,6 +1,14 @@
-[gd_scene format=3 uid="uid://d12u4jiukcyn7"]
+[gd_scene load_steps=3 format=3 uid="uid://d12u4jiukcyn7"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[ext_resource type="Script" uid="uid://br53py8ktf852" path="res://app/scenes/npcs/robo.gd" id="1_ev34g"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[sub_resource type="SpriteFrames" id="SpriteFrames_ev34g"]
+
+[node name="Robo" type="CharacterBody2D"]
+script = ExtResource("1_ev34g")
+
+[node name="ColisaoRobo" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, 0, 32, 0, 32, 64, 0, 64)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ev34g")
