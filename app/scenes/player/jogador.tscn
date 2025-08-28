@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://db0c0p72418tq"]
+
+[ext_resource type="Script" uid="uid://vob3n4s6uaxl" path="res://app/scenes/player/jogador.gd" id="1_w40sf"]
+[ext_resource type="PackedScene" uid="uid://gas05qka3xty" path="res://app/scenes/player/encaixes.tscn" id="2_y26ww"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_b780r"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rmueo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iel3j"]
+size = Vector2(900, 424)
+
+[node name="Jogador" type="Area2D" groups=["mecanica_jogador"]]
+script = ExtResource("1_w40sf")
+
+[node name="Braco" type="Sprite2D" parent="."]
+self_modulate = Color(0.745331, 0.577604, 0.533012, 1)
+scale = Vector2(1280, 350)
+texture = SubResource("CanvasTexture_b780r")
+
+[node name="Visor" type="Sprite2D" parent="."]
+self_modulate = Color(1.05888e-06, 0.746687, 0.591456, 1)
+scale = Vector2(916, 440)
+texture = SubResource("CanvasTexture_rmueo")
+
+[node name="ColisaoVisor" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_iel3j")
+
+[node name="Encaixes" parent="." instance=ExtResource("2_y26ww")]
+position = Vector2(128, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
