@@ -1,12 +1,13 @@
 extends Area2D
 
-signal mover_para_frente
+signal encaixado(bool)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _acoplarComando() -> void:
+	#TODO: criar código para realizar encaixe de comando com slot
+	encaixado.emit(true)
 	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass 
-	
+func _desacoplarComando() -> void:
+		#TODO: criar código para realizar desencaixe de comando com slot
+	encaixado.emit(false)
+	pass

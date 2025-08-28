@@ -1,15 +1,6 @@
 extends Area2D
 
-var comandos = [
-	$Encaixe1,
-	$Encaixe2,
-	$Encaixe3,
-	$Encaixe4,
-	$Encaixe5,
-	$Encaixe6,
-	$Encaixe7,
-	$Encaixe8,
-]
+signal camando_acoplado(String)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,6 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _on_body_entered(body: Node2D) -> void:
-	pass
-	
+func _on_area_entered(area: Area2D) -> void:
+	if (area.position == position) :
+		switch(area.get)
+	pass # Replace with function body.
