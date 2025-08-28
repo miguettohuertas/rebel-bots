@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://du5hwjg55hgwi"
+path="res://.godot/imported/the-death-of-a-rapping-robot-112597 (1).mp3-3ff83a7a922af01ab02f337bd3136b3b.mp3str"
+
+[deps]
+
+source_file="res://app/assets/audio/Som_fundo/the-death-of-a-rapping-robot-112597 (1).mp3"
+dest_files=["res://.godot/imported/the-death-of-a-rapping-robot-112597 (1).mp3-3ff83a7a922af01ab02f337bd3136b3b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
