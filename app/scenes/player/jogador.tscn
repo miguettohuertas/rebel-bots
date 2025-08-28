@@ -1,32 +1,34 @@
-[gd_scene load_steps=6 format=3 uid="uid://db0c0p72418tq"]
+[gd_scene load_steps=8 format=3 uid="uid://db0c0p72418tq"]
 
+[ext_resource type="PackedScene" uid="uid://sn3mwmb5ue5d" path="res://app/scenes/ui/encaixe.tscn" id="1_b780r"]
 [ext_resource type="Script" uid="uid://vob3n4s6uaxl" path="res://app/scenes/player/jogador.gd" id="1_w40sf"]
-[ext_resource type="PackedScene" uid="uid://gas05qka3xty" path="res://app/scenes/ui/encaixes.tscn" id="2_y26ww"]
+[ext_resource type="PackedScene" uid="uid://dhh26r0svjuba" path="res://app/scenes/ui/item.tscn" id="2_y26ww"]
+[ext_resource type="Script" uid="uid://dsfujhsaybp18" path="res://app/scripts/resources/comando.gd" id="4_vg8tv"]
+[ext_resource type="Texture2D" uid="uid://dt4dvbhiiutmf" path="res://app/assets/graphics/items/icon.svg" id="5_25sla"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_b780r"]
+[sub_resource type="Resource" id="Resource_25sla"]
+script = ExtResource("4_vg8tv")
+comando = 0
+sprite = ExtResource("5_25sla")
+metadata/_custom_type_script = "uid://dsfujhsaybp18"
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_rmueo"]
+[sub_resource type="Resource" id="Resource_5kfv4"]
+script = ExtResource("4_vg8tv")
+comando = 1
+metadata/_custom_type_script = "uid://dsfujhsaybp18"
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iel3j"]
-size = Vector2(900, 424)
-
-[node name="Jogador" type="Area2D" groups=["mecanica_jogador"]]
+[node name="Jogador" type="Node2D"]
 script = ExtResource("1_w40sf")
 
-[node name="Braco" type="Sprite2D" parent="."]
-self_modulate = Color(0.745331, 0.577604, 0.533012, 1)
-scale = Vector2(1280, 350)
-texture = SubResource("CanvasTexture_b780r")
-
 [node name="Visor" type="Sprite2D" parent="."]
-self_modulate = Color(1.05888e-06, 0.746687, 0.591456, 1)
-scale = Vector2(916, 440)
-texture = SubResource("CanvasTexture_rmueo")
 
-[node name="ColisaoVisor" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_iel3j")
+[node name="Encaixe" parent="." instance=ExtResource("1_b780r")]
 
-[node name="Encaixes" parent="." instance=ExtResource("2_y26ww")]
-position = Vector2(128, 0)
+[node name="Item" parent="." instance=ExtResource("2_y26ww")]
+comando = SubResource("Resource_25sla")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="Item2" parent="." instance=ExtResource("2_y26ww")]
+comando = SubResource("Resource_5kfv4")
+
+[connection signal="comando_emitido" from="Item" to="." method="_on_item_comando_emitido"]
+[connection signal="comando_emitido" from="Item2" to="." method="_on_item_comando_emitido"]

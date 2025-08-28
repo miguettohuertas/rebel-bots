@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://q0bjy7v5ihri"]
+[gd_scene load_steps=5 format=3 uid="uid://cp1qi05foya7k"]
 
-[ext_resource type="Script" uid="uid://bnpwscs32b61o" path="res://app/scenes/main/jogo.gd" id="1_ngsvm"]
+[ext_resource type="Script" path="res://app/scenes/main/jogo.gd" id="1_ngsvm"]
 [ext_resource type="PackedScene" uid="uid://sn3mwmb5ue5d" path="res://app/scenes/ui/encaixe.tscn" id="2_ap7gv"]
-[ext_resource type="PackedScene" uid="uid://dhh26r0svjuba" path="res://app/scenes/ui/comando.tscn" id="3_ngsvm"]
+[ext_resource type="PackedScene" uid="uid://dhh26r0svjuba" path="res://app/scenes/ui/item.tscn" id="3_ngsvm"]
+[ext_resource type="Resource" uid="uid://7gnemla677je" path="res://app/resources/mover_para_frente.tres" id="4_ngsvm"]
 
 [node name="Jogo" type="Node2D"]
 script = ExtResource("1_ngsvm")
@@ -16,5 +17,5 @@ position = Vector2(595, 197)
 [node name="Encaixe3" parent="." instance=ExtResource("2_ap7gv")]
 position = Vector2(209, 153)
 
-[node name="Comando" parent="." instance=ExtResource("3_ngsvm")]
-position = Vector2(357, 271)
+[node name="MoverParaFrente" parent="." instance=ExtResource("3_ngsvm")]
+comando = ExtResource("4_ngsvm")

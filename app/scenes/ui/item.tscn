@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://dhh26r0svjuba"]
 
-[ext_resource type="Texture2D" uid="uid://dt4dvbhiiutmf" path="res://icon.svg" id="1_jm6il"]
-[ext_resource type="Script" uid="uid://ckwir01t81wfv" path="res://app/scripts/ui/comando.gd" id="1_tccx2"]
+[ext_resource type="Texture2D" uid="uid://dt4dvbhiiutmf" path="res://app/assets/graphics/items/icon.svg" id="1_jm6il"]
+[ext_resource type="Script" uid="uid://ckwir01t81wfv" path="res://app/scripts/ui/item.gd" id="1_tccx2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jm6il"]
 size = Vector2(128, 128)
 
-[node name="Comando" type="Node2D"]
+[node name="Item" type="Node2D"]
 script = ExtResource("1_tccx2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
