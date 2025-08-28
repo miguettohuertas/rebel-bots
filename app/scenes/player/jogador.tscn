@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://db0c0p72418tq"]
 
 [ext_resource type="Script" uid="uid://vob3n4s6uaxl" path="res://app/scenes/player/jogador.gd" id="1_w40sf"]
-[ext_resource type="PackedScene" uid="uid://gas05qka3xty" path="res://app/scenes/player/encaixes.tscn" id="2_y26ww"]
+[ext_resource type="PackedScene" uid="uid://gas05qka3xty" path="res://app/scenes/ui/encaixes.tscn" id="2_y26ww"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_b780r"]
 

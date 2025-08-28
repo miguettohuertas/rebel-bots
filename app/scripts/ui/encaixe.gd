@@ -1,11 +1,13 @@
-extends Node2D
+extends StaticBody2D
 
-var jogador
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	modulate = Color(Color.BLACK, 0.7) 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	pass
+	if Global.esta_arrastando:
+		visible = true
+	else: 
+		visible = false

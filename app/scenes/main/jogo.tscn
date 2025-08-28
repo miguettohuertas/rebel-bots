@@ -1,17 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://q0bjy7v5ihri"]
+[gd_scene load_steps=4 format=3 uid="uid://q0bjy7v5ihri"]
 
 [ext_resource type="Script" uid="uid://bnpwscs32b61o" path="res://app/scenes/main/jogo.gd" id="1_ngsvm"]
-[ext_resource type="PackedScene" uid="uid://cgqnolugfnrtn" path="res://app/scenes/levels/nivel01.tscn" id="1_nx8ty"]
-[ext_resource type="PackedScene" uid="uid://db0c0p72418tq" path="res://app/scenes/player/jogador.tscn" id="2_qj4o5"]
-[ext_resource type="PackedScene" uid="uid://d12u4jiukcyn7" path="res://app/scenes/npcs/robo.tscn" id="3_ap7gv"]
+[ext_resource type="PackedScene" uid="uid://sn3mwmb5ue5d" path="res://app/scenes/ui/encaixe.tscn" id="2_ap7gv"]
+[ext_resource type="PackedScene" uid="uid://dhh26r0svjuba" path="res://app/scenes/ui/comando.tscn" id="3_ngsvm"]
 
 [node name="Jogo" type="Node2D"]
 script = ExtResource("1_ngsvm")
 
-[node name="Level01" parent="." instance=ExtResource("1_nx8ty")]
+[node name="Encaixe" parent="." instance=ExtResource("2_ap7gv")]
+position = Vector2(352, 127)
 
-[node name="Jogador" parent="." instance=ExtResource("2_qj4o5")]
-position = Vector2(640, 500)
+[node name="Encaixe2" parent="." instance=ExtResource("2_ap7gv")]
+position = Vector2(595, 197)
 
-[node name="Robo" parent="." instance=ExtResource("3_ap7gv")]
-position = Vector2(283, 117)
+[node name="Encaixe3" parent="." instance=ExtResource("2_ap7gv")]
+position = Vector2(209, 153)
+
+[node name="Comando" parent="." instance=ExtResource("3_ngsvm")]
+position = Vector2(357, 271)
