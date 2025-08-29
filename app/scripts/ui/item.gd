@@ -31,6 +31,7 @@ func _process(_delta: float) -> void:
 			
 			if esta_dentro_de_largavel:
 				comando_emitido.emit(comando)
+				
 				tween.tween_property(self, "position", ref_de_corpo.position, 0.2).set_ease(Tween.EASE_OUT)
 				
 			else:

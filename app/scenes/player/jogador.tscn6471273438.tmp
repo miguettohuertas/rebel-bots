@@ -29,11 +29,9 @@ texture = SubResource("CanvasTexture_25sla")
 
 [node name="Encaixe" parent="." instance=ExtResource("1_b780r")]
 position = Vector2(56, 59)
-encaixe = 1
 
 [node name="Encaixe2" parent="." instance=ExtResource("1_b780r")]
 position = Vector2(148, 62)
-encaixe = 2
 
 [node name="Item" parent="." instance=ExtResource("2_y26ww")]
 position = Vector2(156, 188)
@@ -43,6 +41,5 @@ comando = SubResource("Resource_25sla")
 position = Vector2(330, 187)
 comando = SubResource("Resource_5kfv4")
 
-[connection signal="instrucao_emitida" from="Encaixe" to="." method="_on_encaixe_instrucao_emitida"]
 [connection signal="comando_emitido" from="Item" to="Encaixe" method="_on_item_comando_emitido"]
 [connection signal="comando_emitido" from="Item2" to="." method="_on_item_comando_emitido"]

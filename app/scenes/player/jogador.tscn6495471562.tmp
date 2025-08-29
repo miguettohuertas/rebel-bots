@@ -29,11 +29,9 @@ texture = SubResource("CanvasTexture_25sla")
 
 [node name="Encaixe" parent="." instance=ExtResource("1_b780r")]
 position = Vector2(56, 59)
-encaixe = 1
 
 [node name="Encaixe2" parent="." instance=ExtResource("1_b780r")]
 position = Vector2(148, 62)
-encaixe = 2
 
 [node name="Item" parent="." instance=ExtResource("2_y26ww")]
 position = Vector2(156, 188)
